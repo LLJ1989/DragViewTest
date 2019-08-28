@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DragViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGT-si-N1V">
+                                <rect key="frame" x="20" y="64" width="374" height="698"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fg-5S-r67" customClass="ResizableView" customModule="DragViewTest" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="558" width="120" height="120"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6IX-0i-YIq">
+                                                <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="02A-S5-b3j"/>
+                                                    <constraint firstAttribute="width" constant="100" id="4Nc-aX-BF1"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="4Vx-ub-soE"/>
+                                            <constraint firstAttribute="width" constant="120" id="A40-AZ-Wyd"/>
+                                            <constraint firstItem="6IX-0i-YIq" firstAttribute="top" secondItem="2fg-5S-r67" secondAttribute="top" constant="10" id="CHC-Yl-OkZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="6IX-0i-YIq" secondAttribute="trailing" constant="10" id="Taf-3a-akA"/>
+                                            <constraint firstItem="6IX-0i-YIq" firstAttribute="leading" secondItem="2fg-5S-r67" secondAttribute="leading" constant="10" id="anJ-1i-jC5"/>
+                                            <constraint firstAttribute="bottom" secondItem="6IX-0i-YIq" secondAttribute="bottom" constant="10" id="jn3-E9-3XK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2fg-5S-r67" firstAttribute="leading" secondItem="bGT-si-N1V" secondAttribute="leading" constant="20" id="8l9-bK-Kxo"/>
+                                    <constraint firstAttribute="bottom" secondItem="2fg-5S-r67" secondAttribute="bottom" constant="20" id="m04-Ql-Hws"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pE1-Qv-TgS">
+                                <rect key="frame" x="20" y="782" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="0fL-oU-G3t"/>
+                                </constraints>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapAddPictureButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gfl-cn-Kja"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bGT-si-N1V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4PJ-eo-gVe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pE1-Qv-TgS" secondAttribute="bottom" constant="20" id="FnI-kZ-q44"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bGT-si-N1V" secondAttribute="bottom" constant="100" id="XlM-Lh-nEm"/>
+                            <constraint firstItem="pE1-Qv-TgS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZhI-SS-f0b"/>
+                            <constraint firstItem="bGT-si-N1V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bZo-qS-gSf"/>
+                            <constraint firstItem="pE1-Qv-TgS" firstAttribute="top" secondItem="bGT-si-N1V" secondAttribute="bottom" constant="20" id="dpK-J7-D8m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bGT-si-N1V" secondAttribute="trailing" constant="20" id="rlM-6d-CVV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="bGT-si-N1V" id="kTe-1o-L9n"/>
+                        <outlet property="draggingContainerView" destination="2fg-5S-r67" id="vIf-Cb-QOq"/>
+                        <outlet property="draggingImage" destination="6IX-0i-YIq" id="bRF-nj-tPG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

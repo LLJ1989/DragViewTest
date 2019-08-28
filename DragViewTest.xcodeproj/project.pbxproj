@@ -13,6 +13,8 @@
 		914E68CE2316BB4F00639447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914E68CD2316BB4F00639447 /* Assets.xcassets */; };
 		914E68D12316BB4F00639447 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914E68CF2316BB4F00639447 /* LaunchScreen.storyboard */; };
 		914E68DC2316BB4F00639447 /* DragViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E68DB2316BB4F00639447 /* DragViewTestTests.swift */; };
+		914E68E72316BB8200639447 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E68E62316BB8200639447 /* CustomView.swift */; };
+		914E68EE2316BDA700639447 /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914E68ED2316BDA700639447 /* CameraHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		914E68D72316BB4F00639447 /* DragViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		914E68DB2316BB4F00639447 /* DragViewTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragViewTestTests.swift; sourceTree = "<group>"; };
 		914E68DD2316BB4F00639447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		914E68E62316BB8200639447 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		914E68ED2316BDA700639447 /* CameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,10 @@
 		914E68C52316BB4D00639447 /* DragViewTest */ = {
 			isa = PBXGroup;
 			children = (
-				914E68C62316BB4D00639447 /* AppDelegate.swift */,
-				914E68C82316BB4D00639447 /* ViewController.swift */,
-				914E68CA2316BB4D00639447 /* Main.storyboard */,
-				914E68CD2316BB4F00639447 /* Assets.xcassets */,
-				914E68CF2316BB4F00639447 /* LaunchScreen.storyboard */,
-				914E68D22316BB4F00639447 /* Info.plist */,
+				914E68EB2316BD8800639447 /* Model */,
+				914E68EA2316BD7900639447 /* View */,
+				914E68E92316BD6D00639447 /* Controller */,
+				914E68E82316BD5E00639447 /* Supporting Files */,
 			);
 			path = DragViewTest;
 			sourceTree = "<group>";
@@ -94,6 +96,42 @@
 				914E68DD2316BB4F00639447 /* Info.plist */,
 			);
 			path = DragViewTestTests;
+			sourceTree = "<group>";
+		};
+		914E68E82316BD5E00639447 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				914E68C62316BB4D00639447 /* AppDelegate.swift */,
+				914E68CD2316BB4F00639447 /* Assets.xcassets */,
+				914E68D22316BB4F00639447 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		914E68E92316BD6D00639447 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				914E68E62316BB8200639447 /* CustomView.swift */,
+				914E68C82316BB4D00639447 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		914E68EA2316BD7900639447 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				914E68CA2316BB4D00639447 /* Main.storyboard */,
+				914E68CF2316BB4F00639447 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		914E68EB2316BD8800639447 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				914E68ED2316BDA700639447 /* CameraHandler.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914E68E72316BB8200639447 /* CustomView.swift in Sources */,
+				914E68EE2316BDA700639447 /* CameraHandler.swift in Sources */,
 				914E68C92316BB4D00639447 /* ViewController.swift in Sources */,
 				914E68C72316BB4D00639447 /* AppDelegate.swift in Sources */,
 			);
@@ -362,7 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8TDJL946XY;
-				INFOPLIST_FILE = DragViewTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DragViewTest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8TDJL946XY;
-				INFOPLIST_FILE = DragViewTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DragViewTest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
